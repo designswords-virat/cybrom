@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cybrom Technology — Central India's No.1 Job-Oriented IT Training Institute</title>
+<meta name="description" content="Job-ready IT & software courses in Bhopal — Full Stack, AI/ML, Data Science, Cyber Security, DevOps & Digital Marketing. IIT Guwahati certification, 10K+ students trained, pay-after-placement, 5-year placement assistance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1030;
+  --navy-2:#10173F;
+  --navy-3:#171F4D;
+  --ink:#0B1030;
+  --bg:#FFFFFF;
+  --soft:#F5F6FB;
+  --cream:#FFF6EE;
+  --line:#E7E9F2;
+  --line-navy:rgba(255,255,255,.12);
+  --muted:#5A6079;
+  --muted-2:#8B90A6;
+  --orange:#F97316;
+  --orange-dk:#E85D04;
+  --amber:#FBBE5E;
+  --amber-lt:#FCD79E;
+  --sky:#5B8DEF;
+  --violet:#7C6BF0;
+  --green:#22A06B;
+  --r:16px;
+  --r-sm:11px;
+  --r-lg:26px;
+  --shadow:0 30px 70px -34px rgba(11,16,48,.4);
+  --shadow-sm:0 14px 34px -20px rgba(11,16,48,.34);
+  --shadow-orange:0 18px 40px -16px rgba(249,115,22,.5);
+  --maxw:1200px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+.lenis.lenis-stopped{overflow:hidden}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-weight:400;line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Sora',sans-serif;font-weight:700;line-height:1.06;letter-spacing:-.02em;margin:0;color:var(--ink)}
+h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:800}
+h2{font-size:clamp(2rem,4vw,3.15rem);font-weight:800}
+h3{font-size:1.32rem;font-weight:700}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.kicker{font-family:'Sora',sans-serif;font-weight:700;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);margin:0 0 18px;display:inline-flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:22px;height:3px;border-radius:3px;background:var(--orange)}
+.kicker.c{justify-content:center}
+.kicker.light{color:var(--amber)}.kicker.light::before{background:var(--amber)}
+.lead{color:var(--muted);font-size:1.12rem;line-height:1.7}
+section{padding:clamp(64px,8vw,110px) 0;position:relative}
+.hl{color:var(--orange)}
+.hl-amber{color:var(--amber)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.6em;font-family:'Sora',sans-serif;font-weight:700;font-size:.94rem;padding:15px 30px;border-radius:10px;cursor:pointer;border:2px solid transparent;transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s,background .25s,color .2s,border-color .2s;letter-spacing:.01em}
+.btn svg{width:17px;height:17px}
+.btn-orange{background:var(--orange);color:#fff;box-shadow:var(--shadow-orange)}
+.btn-orange:hover{background:var(--orange-dk);transform:translateY(-3px)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-3);transform:translateY(-3px)}
+.btn-ghost-l{background:transparent;color:#fff;border-color:rgba(255,255,255,.28)}
+.btn-ghost-l:hover{background:#fff;color:var(--navy);transform:translateY(-3px)}
+.btn-ghost-d{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost-d:hover{border-color:var(--navy);background:var(--navy);color:#fff;transform:translateY(-3px)}
+.link-arrow{font-family:'Sora',sans-serif;font-weight:700;font-size:.9rem;color:var(--orange);display:inline-flex;align-items:center;gap:8px;transition:gap .25s}
+.link-arrow:hover{gap:13px}
+
+/* brand logo */
+.brand-logo{height:36px;width:auto;display:block}
+.brand-logo.on-dark{filter:brightness(0) invert(1);opacity:.95}
+
+/* recognitions / accreditations */
+.recog{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.recog .wrap{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:22px 54px;text-align:center}
+.recog .lbl{font-family:'Sora';font-weight:700;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2);width:100%;margin-bottom:8px}
+.recog .lbl b{color:var(--navy)}
+.recog img{height:56px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.7;transition:filter .3s,opacity .3s,transform .3s}
+.recog img:hover{filter:none;opacity:1;transform:translateY(-3px)}
+.recog .iso{height:64px}
+@media(max-width:600px){.recog .wrap{gap:20px 34px}.recog img{height:46px}}
+
+/* announcement bar */
+.topbar{background:var(--orange);color:#fff;font-size:.86rem;font-weight:500}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:42px;gap:16px}
+.topbar a{color:#fff;display:inline-flex;align-items:center;gap:7px;font-weight:600}
+.topbar .mid{font-weight:600;letter-spacing:.02em}
+.topbar .soc{display:flex;gap:14px}
+.topbar svg{width:15px;height:15px}
+@media(max-width:720px){.topbar .mid{display:none}}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:70;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{font-weight:600;font-size:.93rem;color:var(--ink);opacity:.82;transition:opacity .2s;display:inline-flex;align-items:center;gap:5px}
+.nav-links a:hover{opacity:1;color:var(--orange)}
+.nav-links svg{width:13px;height:13px;opacity:.6}
+.nav-cta{display:flex;align-items:center;gap:14px}
+@media(max-width:1000px){.nav-links{display:none}}
+@media(max-width:520px){.nav-cta .btn-ghost-d{display:none}}
+
+/* hero */
+.hero{background:radial-gradient(120% 120% at 85% -10%,#1B2461 0%,var(--navy) 55%);color:#fff;overflow:hidden;padding:clamp(48px,6vw,86px) 0 clamp(60px,7vw,96px)}
+.hero .wrap{position:relative;z-index:2}
+.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(34px,4vw,60px);align-items:center}
+.hero h1{color:#fff;margin-bottom:0}
+.hero h1 .stroke{color:var(--amber)}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid var(--line-navy);border-radius:100px;padding:8px 16px 8px 8px;font-size:.82rem;font-weight:600;color:#EAECFA;margin-bottom:26px}
+.hero-badge .p{background:var(--orange);color:#fff;font-weight:700;font-size:.72rem;padding:4px 10px;border-radius:100px}
+.hero p.sub{color:#B7BDDD;font-size:1.16rem;margin:24px 0 34px;max-width:46ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+.hero-stats{display:grid;grid-template-columns:repeat(4,auto);gap:26px 38px;margin-top:44px;padding-top:34px;border-top:1px solid var(--line-navy)}
+.hs b{font-family:'Sora',sans-serif;font-weight:800;font-size:1.9rem;color:#fff;display:block;line-height:1}
+.hs b .u{color:var(--orange)}
+.hs span{font-size:.82rem;color:#9AA0C2;margin-top:6px;display:block}
+.hero-media{position:relative}
+.hero-photo{position:relative;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/4.4;border:1px solid var(--line-navy)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;transform:scale(1.05)}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(11,16,48,.72))}
+.hero-float{position:absolute;background:#fff;color:var(--ink);border-radius:14px;padding:14px 18px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px}
+.hero-float.a{left:-24px;top:38px}
+.hero-float.b{right:-18px;bottom:44px}
+.hero-float .ic{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex:none}
+.hero-float .ic.o{background:var(--cream);color:var(--orange)}
+.hero-float .ic.g{background:#E4F6EE;color:var(--green)}
+.hero-float b{font-family:'Sora',sans-serif;font-size:.98rem;display:block;line-height:1.1}
+.hero-float span{font-size:.76rem;color:var(--muted)}
+.hero-star{position:absolute;width:120px;top:-20px;right:34%;opacity:.9;z-index:1;animation:spin 26s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-media{max-width:440px;margin:6px auto 0}.hero-stats{grid-template-columns:1fr 1fr}.hero-star{display:none}}
+
+/* marquee trust */
+.marquee-wrap{background:var(--navy-2);color:#fff;overflow:hidden;padding:20px 0;border-top:1px solid var(--line-navy)}
+.marquee{display:flex;gap:52px;width:max-content;animation:slide 34s linear infinite;align-items:center}
+.marquee span{font-family:'Sora',sans-serif;font-weight:600;font-size:1.05rem;color:#C9CEEA;white-space:nowrap;display:inline-flex;align-items:center;gap:52px}
+.marquee span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--orange)}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marquee{animation:none}.hero-star{animation:none}}
+
+/* section head */
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:48px}
+.sec-head .lead{max-width:42ch}
+.sec-head.center{flex-direction:column;align-items:center;text-align:center;margin-bottom:52px}
+.sec-head.center .lead{margin-top:16px}
+
+/* courses */
+.courses{background:var(--soft)}
+.course-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.course{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 28px;position:relative;overflow:hidden;transition:transform .32s cubic-bezier(.2,.7,.2,1),box-shadow .32s,border-color .3s}
+.course::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--orange);transform:scaleY(0);transform-origin:top;transition:transform .35s ease}
+.course:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:transparent}
+.course:hover::before{transform:scaleY(1)}
+.course .ic{width:54px;height:54px;border-radius:14px;background:var(--cream);color:var(--orange);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.course:nth-child(2) .ic{background:#EAF1FE;color:var(--sky)}
+.course:nth-child(3) .ic{background:#EDEAFD;color:var(--violet)}
+.course:nth-child(4) .ic{background:#E4F6EE;color:var(--green)}
+.course:nth-child(5) .ic{background:#FEF0E7;color:var(--orange-dk)}
+.course:nth-child(6) .ic{background:#EAF1FE;color:var(--sky)}
+.course .ic svg{width:26px;height:26px}
+.course h3{margin-bottom:8px}
+.course .cnt{font-size:.78rem;font-weight:700;color:var(--muted-2);letter-spacing:.05em;text-transform:uppercase;margin-bottom:14px}
+.course ul{list-style:none;padding:0;margin:0 0 20px}
+.course ul li{font-size:.92rem;color:var(--muted);padding:5px 0 5px 20px;position:relative}
+.course ul li::before{content:"";position:absolute;left:0;top:13px;width:7px;height:7px;border-radius:2px;background:var(--orange);opacity:.6}
+@media(max-width:900px){.course-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.course-grid{grid-template-columns:1fr}}
+
+/* why cybrom */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.why{padding:30px 26px;border-radius:var(--r);background:#fff;border:1px solid var(--line);transition:transform .3s,box-shadow .3s}
+.why:hover{transform:translateY(-6px);box-shadow:var(--shadow-sm)}
+.why .ic{width:52px;height:52px;border-radius:13px;background:var(--navy);color:var(--amber);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.why .ic svg{width:25px;height:25px}
+.why h3{font-size:1.12rem;margin-bottom:9px}
+.why p{color:var(--muted);font-size:.93rem}
+@media(max-width:900px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.why-grid{grid-template-columns:1fr}}
+
+/* pay-after-placement band */
+.payband{background:linear-gradient(115deg,var(--orange),var(--orange-dk));color:#fff;border-radius:var(--r-lg);padding:clamp(38px,5vw,60px);display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.payband .k{font-family:'Sora';font-weight:700;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:#FFE2CC;margin-bottom:14px}
+.payband h2{color:#fff;font-size:clamp(1.8rem,3.2vw,2.7rem)}
+.payband p{color:#FFEADE;margin-top:14px;max-width:44ch}
+.payband .glow{position:absolute;width:360px;height:360px;border-radius:50%;background:rgba(255,255,255,.16);filter:blur(30px);top:-140px;right:-60px}
+.payband-cta{display:flex;flex-direction:column;gap:14px;position:relative}
+.payband-steps{display:flex;gap:10px;position:relative;margin-top:6px}
+.payband-steps .st{flex:1;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:16px 14px;text-align:center}
+.payband-steps .st b{font-family:'Sora';display:block;font-size:1.5rem}
+.payband-steps .st span{font-size:.78rem;color:#FFEADE}
+@media(max-width:800px){.payband{grid-template-columns:1fr;gap:26px}}
+
+/* success stories */
+.stories{background:var(--navy);color:#fff;overflow:hidden}
+.stories h2{color:#fff}.stories .lead{color:#AEB4D6}
+.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.story{background:var(--navy-2);border:1px solid var(--line-navy);border-radius:var(--r);overflow:hidden;transition:transform .32s,box-shadow .32s,border-color .3s}
+.story:hover{transform:translateY(-7px);border-color:rgba(251,190,94,.4);box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.story .ph{aspect-ratio:1/1;overflow:hidden;position:relative;background:var(--navy-3)}
+.story .ph img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .6s ease}
+.story:hover .ph img{transform:scale(1.05)}
+.story .pkg{position:absolute;top:14px;left:14px;background:var(--orange);color:#fff;font-family:'Sora';font-weight:700;font-size:.78rem;padding:6px 12px;border-radius:100px}
+.story .body{padding:22px 22px 26px}
+.story .body h3{font-size:1.08rem;color:#fff;margin-bottom:8px;line-height:1.25}
+.story .body p{color:#9AA0C2;font-size:.9rem}
+.story .body .nm{margin-top:14px;font-size:.82rem;color:var(--amber);font-weight:600}
+@media(max-width:900px){.story-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.story-grid{grid-template-columns:1fr}}
+
+/* stats band */
+.statband{background:var(--cream)}
+.statband .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.sb{text-align:center;padding:10px}
+.sb b{font-family:'Sora';font-weight:800;font-size:clamp(2.2rem,4vw,3.2rem);color:var(--navy);display:block;line-height:1}
+.sb b .u{color:var(--orange)}
+.sb span{font-size:.92rem;color:var(--muted);margin-top:8px;display:block}
+@media(max-width:640px){.statband .wrap{grid-template-columns:1fr 1fr;gap:34px 22px}}
+
+/* campus gallery */
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:16px}
+.gcell{overflow:hidden;border-radius:var(--r-sm);position:relative}
+.gcell img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.gcell:hover img{transform:scale(1.07)}
+.gcell.big{grid-column:span 2;grid-row:span 2}
+.gcell.tall{grid-row:span 2}
+@media(max-width:820px){.gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gcell.big{grid-column:span 2}}
+
+/* founder */
+.founder{background:var(--soft)}
+.founder-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(34px,5vw,60px);display:grid;grid-template-columns:auto 1fr;gap:clamp(28px,4vw,54px);align-items:center;box-shadow:var(--shadow-sm)}
+.founder-badge{width:clamp(120px,16vw,180px);height:clamp(120px,16vw,180px);border-radius:24px;background:linear-gradient(150deg,var(--navy),var(--navy-3));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;flex:none}
+.founder-badge .in{font-family:'Sora';font-weight:800;font-size:2.6rem;color:var(--amber)}
+.founder-badge span{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#AEB4D6;margin-top:4px}
+.founder blockquote{font-family:'Sora',sans-serif;font-weight:600;font-size:clamp(1.3rem,2.4vw,1.85rem);line-height:1.34;letter-spacing:-.01em;margin:0 0 22px;color:var(--ink)}
+.founder .who b{font-family:'Sora';font-size:1.05rem}
+.founder .who span{color:var(--muted);font-size:.9rem;display:block}
+@media(max-width:640px){.founder-card{grid-template-columns:1fr;text-align:center}.founder-badge{margin:0 auto}}
+
+/* CTA / enquiry */
+.enquire{background:var(--navy);color:#fff;overflow:hidden}
+.enq-grid{display:grid;grid-template-columns:1fr 1.02fr;gap:clamp(34px,5vw,64px);align-items:center}
+.enquire h2{color:#fff}
+.enquire .lead{color:#AEB4D6}
+.enq-list{list-style:none;padding:0;margin:28px 0 0}
+.enq-list li{padding:14px 0;border-top:1px solid var(--line-navy);display:flex;gap:14px;align-items:center;color:#DDE0F0;font-weight:500}
+.enq-list li:last-child{border-bottom:1px solid var(--line-navy)}
+.enq-list li svg{width:20px;height:20px;color:var(--amber);flex:none}
+.enq-call{margin-top:28px;font-size:.98rem;color:#AEB4D6}
+.enq-call a{font-family:'Sora';font-weight:700;color:#fff}
+.form-card{background:#fff;color:var(--ink);border-radius:var(--r-lg);padding:clamp(28px,4vw,42px);box-shadow:var(--shadow)}
+.form-card h3{font-size:1.5rem;margin-bottom:5px}
+.form-card .sub{color:var(--muted);font-size:.92rem;margin-bottom:24px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:.76rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.field input,.field select,.field textarea{width:100%;font-family:inherit;font-size:.97rem;color:var(--ink);background:var(--soft);border:1.5px solid var(--line);border-radius:10px;padding:13px 15px;outline:none;transition:border-color .2s,box-shadow .2s}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(249,115,22,.14);background:#fff}
+.field textarea{resize:vertical;min-height:84px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-card .btn{width:100%;justify-content:center;margin-top:6px}
+.form-note{font-size:.79rem;color:var(--muted);text-align:center;margin-top:13px}
+.form-ok{display:none;text-align:center;padding:26px 8px}
+.form-ok.show{display:block}
+.form-ok .oi{width:60px;height:60px;border-radius:50%;background:var(--cream);color:var(--orange);display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+.form-ok .oi svg{width:28px;height:28px}
+.form-ok h3{margin-bottom:8px}.form-ok p{color:var(--muted)}
+@media(max-width:820px){.enq-grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:var(--navy-2);color:#AEB4D6;padding:70px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:38px}
+.foot-brand .wordmark{margin-bottom:16px}
+footer p.desc{font-size:.92rem;max-width:32ch;color:#8B90A6}
+.foot-soc{display:flex;gap:10px;margin-top:18px}
+.foot-soc a{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;color:#C9CEEA;transition:.25s}
+.foot-soc a:hover{background:var(--orange);color:#fff;transform:translateY(-3px)}
+.foot-soc svg{width:17px;height:17px}
+footer h5{font-family:'Sora';font-weight:700;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin:0 0 16px}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:11px}
+footer ul a{font-size:.93rem;color:#AEB4D6;transition:color .2s}
+footer ul a:hover{color:var(--amber)}
+.foot-contact li{display:flex;gap:11px;align-items:flex-start;font-size:.93rem;color:#AEB4D6}
+.foot-contact svg{width:17px;height:17px;color:var(--orange);flex:none;margin-top:3px}
+.foot-bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:52px;padding-top:24px;border-top:1px solid var(--line-navy);font-size:.85rem;color:#8B90A6}
+@media(max-width:820px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.foot-grid{grid-template-columns:1fr}}
+
+/* reveal */
+.fx{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.fx.in{opacity:1;transform:none}
+.fx-d1{transition-delay:.08s}.fx-d2{transition-delay:.16s}.fx-d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){.fx{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="wrap">
+    <a href="tel:9755996968"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 9.5a16 16 0 006 6l1.1-1.1a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg>+91 97559 96968</a>
+    <span class="mid">Upskill Now With Cybrom Technology — Admissions Open</span>
+    <div class="soc">
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l.5-3.5H13V8.2c0-1 .3-1.7 1.8-1.7H17V3.4A26 26 0 0014.5 3C12 3 10.3 4.5 10.3 7.7v2.8H7.5V14h2.8v8z"/></svg></a>
+      <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2 3.77-2C21.4 8.7 22 11 22 14.1V21h-4v-6c0-1.4 0-3.3-2-3.3s-2.3 1.5-2.3 3.2V21h-4z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" aria-label="Cybrom home"><img class="brand-logo" src="images/logo_cybrom.png" alt="Cybrom Technology"></a>
+    <nav class="nav-links">
+      <a href="#courses">Courses <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></a>
+      <a href="#why">Why Cybrom</a>
+      <a href="#stories">Success Stories</a>
+      <a href="#campus">Campus Life</a>
+      <a href="#founder">About</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost-d" href="tel:9755996968">Talk to us</a>
+      <a class="btn btn-orange" href="#enquire">Enroll Now</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="hero-badge fx"><span class="p">No.1</span> Central India's Job-Oriented Training Institute</div>
+        <h1 class="fx fx-d1">Learn skills that<br>get you <span class="stroke">hired.</span></h1>
+        <p class="sub fx fx-d2">Hands-on, offline IT &amp; software training in Bhopal — Full Stack, AI/ML, Data Science, Cyber Security &amp; more. Learn from industry mentors and land the job.</p>
+        <div class="hero-actions fx fx-d2">
+          <a class="btn btn-orange" href="#courses">Explore courses
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost-l" href="#enquire">Book a free counselling</a>
+        </div>
+        <div class="hero-stats fx fx-d3">
+          <div class="hs"><b>10K<span class="u">+</span></b><span>Students trained</span></div>
+          <div class="hs"><b>17<span class="u"> LPA</span></b><span>Highest package</span></div>
+          <div class="hs"><b>5<span class="u">-Yr</span></b><span>Placement support</span></div>
+          <div class="hs"><b>IIT<span class="u">-G</span></b><span>Certification</span></div>
+        </div>
+      </div>
+      <div class="hero-media fx fx-d1">
+        <div class="hero-photo"><img data-parallax src="images/lms_2.webp" alt="A Cybrom student placed at a top MNC"></div>
+        <div class="hero-float a">
+          <span class="ic o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10L12 5 2 10l10 5 10-5zM6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg></span>
+          <div><b>Job-oriented</b><span>curriculum</span></div>
+        </div>
+        <div class="hero-float b">
+          <span class="ic g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <div><b>Pay after</b><span>placement</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee">
+    <span>Full Stack Development</span><span>Artificial Intelligence</span><span>Machine Learning</span><span>Data Science</span><span>Cyber Security</span><span>Ethical Hacking</span><span>DevOps &amp; Cloud</span><span>Digital Marketing</span><span>Gen AI &amp; MLOps</span>
+    <span>Full Stack Development</span><span>Artificial Intelligence</span><span>Machine Learning</span><span>Data Science</span><span>Cyber Security</span><span>Ethical Hacking</span><span>DevOps &amp; Cloud</span><span>Digital Marketing</span><span>Gen AI &amp; MLOps</span>
+  </div>
+</div>
+
+<!-- COURSES -->
+<section class="courses" id="courses">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker fx">Job-ready programs</p>
+        <h2 class="fx fx-d1">Courses built to<br>get you placed.</h2>
+      </div>
+      <p class="lead fx fx-d2">Industry-designed, mentor-led programs with real projects, internships and certification — across the skills MNCs are hiring for right now.</p>
+    </div>
+    <div class="course-grid">
+      <article class="course fx">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M8 3H5a2 2 0 00-2 2v14a2 2 0 002 2h3M16 3h3a2 2 0 012 2v14a2 2 0 01-2 2h-3M12 8v8M9 11l3-3 3 3"/></svg></div>
+        <h3>Full Stack Web</h3>
+        <div class="cnt">Development</div>
+        <ul><li>Full Stack Web Development</li><li>Front-end &amp; Back-end mastery</li><li>Live projects &amp; deployment</li></ul>
+        <a class="link-arrow" href="#enquire">View program →</a>
+      </article>
+      <article class="course fx fx-d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 3v18h18M7 15l4-4 3 3 5-6"/></svg></div>
+        <h3>Data Programs</h3>
+        <div class="cnt">Data Science</div>
+        <ul><li>Data Science &amp; Analytics</li><li>Python, SQL &amp; visualisation</li><li>Real datasets &amp; dashboards</li></ul>
+        <a class="link-arrow" href="#enquire">View program →</a>
+      </article>
+      <article class="course fx fx-d2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9zM9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div>
+        <h3>AI-ML</h3>
+        <div class="cnt">5 certifications</div>
+        <ul><li>Machine Learning</li><li>Artificial Intelligence with Gen AI</li><li>AI with Agentic AI &amp; MLOps</li></ul>
+        <a class="link-arrow" href="#enquire">View program →</a>
+      </article>
+      <article class="course fx">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 3l7 3v5c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9.5 12l1.8 1.8L15 10"/></svg></div>
+        <h3>Cyber Security</h3>
+        <div class="cnt">6 certifications</div>
+        <ul><li>Cyber Security &amp; Ethical Hacking</li><li>Cyber Security Expert / Master</li><li>IT Security &amp; Ethical Hacking</li></ul>
+        <a class="link-arrow" href="#enquire">View program →</a>
+      </article>
+      <article class="course fx fx-d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 15a4 4 0 004 4h11a3 3 0 000-6 5 5 0 00-9.6-1.5A4 4 0 003 15z"/></svg></div>
+        <h3>DevOps &amp; Cloud</h3>
+        <div class="cnt">Cloud Computing</div>
+        <ul><li>DevOps &amp; Cloud Computing</li><li>CI/CD, Docker &amp; Kubernetes</li><li>AWS / Azure fundamentals</li></ul>
+        <a class="link-arrow" href="#enquire">View program →</a>
+      </article>
+      <article class="course fx fx-d2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg></div>
+        <h3>Digital Marketing</h3>
+        <div class="cnt">4 certifications</div>
+        <ul><li>Digital Marketing Foundation</li><li>Digital Marketing &amp; Data Analytics</li><li>Advanced Digital Marketing</li></ul>
+        <a class="link-arrow" href="#enquire">View program →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CYBROM -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div>
+        <p class="kicker c fx">Why Cybrom</p>
+        <h2 class="fx fx-d1">Everything you need to go from<br>learner to professional.</h2>
+      </div>
+      <p class="lead fx fx-d2">Not just courses — a complete, industry-backed ecosystem built around your placement.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why fx">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 2l2.4 7.4H22l-6 4.5 2.3 7.1-6.3-4.6-6.3 4.6L8 13.9 2 9.4h7.6z"/></svg></div>
+        <h3>Cybrom Alumni Status</h3>
+        <p>Become a Cybrom alumnus and strengthen your career profile for life.</p>
+      </div>
+      <div class="why fx fx-d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5L7 22l5-3 5 3-1.5-9.5"/></svg></div>
+        <h3>Industry-Recognised Certificate</h3>
+        <p>Validate industry-level knowledge and practical skill — including IIT Guwahati certification.</p>
+      </div>
+      <div class="why fx fx-d2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.9M16 3.1a4 4 0 010 7.8"/></svg></div>
+        <h3>Guest Lectures from Experts</h3>
+        <p>Learn directly from experienced MNC mentors through regular guest sessions.</p>
+      </div>
+      <div class="why fx fx-d3">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
+        <h3>Professional Internship</h3>
+        <p>Guaranteed internship opportunities to build real-world experience.</p>
+      </div>
+      <div class="why fx">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 2a7 7 0 00-4 12.7V17a2 2 0 002 2h4a2 2 0 002-2v-2.3A7 7 0 0012 2zM9 22h6"/></svg></div>
+        <h3>AI-Powered Learning</h3>
+        <p>An intelligent Smart LMS delivering personalised, adaptive education.</p>
+      </div>
+      <div class="why fx fx-d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20 7h-4V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2H4a2 2 0 00-2 2v11h20V9a2 2 0 00-2-2zM10 7V5h4v2"/></svg></div>
+        <h3>Mentor-Led Courses</h3>
+        <p>Every program is guided by experienced, working-professional mentors.</p>
+      </div>
+      <div class="why fx fx-d2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <h3>Pay After Placement</h3>
+        <p>Pay a partial fee only after you're placed. Learn. Earn. Grow.</p>
+      </div>
+      <div class="why fx fx-d3">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+        <h3>5-Year Placement Support</h3>
+        <p>Placement assistance that stays with you for five full years.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAY AFTER PLACEMENT BAND -->
+<section style="padding:0 0 clamp(64px,8vw,110px)">
+  <div class="wrap">
+    <div class="payband fx">
+      <div class="glow"></div>
+      <div>
+        <p class="k">Learn. Earn. Grow.</p>
+        <h2>Start now. Pay a part of your fee <span style="color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.5)">after you're placed.</span></h2>
+        <p>We back our training with our own skin in the game — so your career, not your fees, comes first.</p>
+      </div>
+      <div class="payband-cta">
+        <div class="payband-steps">
+          <div class="st"><b>Learn</b><span>Industry skills</span></div>
+          <div class="st"><b>Intern</b><span>Real projects</span></div>
+          <div class="st"><b>Placed</b><span>Then pay</span></div>
+        </div>
+        <a class="btn btn-navy" href="#enquire" style="justify-content:center">Check your eligibility</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUCCESS STORIES -->
+<section class="stories" id="stories">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker light fx">Every student, a success story</p>
+        <h2 class="fx fx-d1">Real people. Real placements.</h2>
+      </div>
+      <p class="lead fx fx-d2">From career gaps and non-IT backgrounds to top MNC roles — see how Cybrom learners rewrote their careers.</p>
+    </div>
+    <div class="story-grid">
+      <article class="story fx">
+        <div class="ph"><span class="pkg">17 LPA</span><img src="images/lms_1.webp" alt=""></div>
+        <div class="body"><h3>From 6 years of pause to a 17 LPA offer</h3><p>Turning years of career gap into a powerful comeback through persistence and upskilling.</p><div class="nm">Cybrom Alumna</div></div>
+      </article>
+      <article class="story fx fx-d1">
+        <div class="ph"><span class="pkg">Top MNC</span><img src="images/lms_2.webp" alt=""></div>
+        <div class="body"><h3>From non-IT to App Developer in a top MNC</h3><p>A complete career switch into software — no prior tech background needed.</p><div class="nm">Cybrom Alumnus</div></div>
+      </article>
+      <article class="story fx fx-d2">
+        <div class="ph"><span class="pkg">Full-Stack</span><img src="images/lms_6.webp" alt=""></div>
+        <div class="body"><h3>From Super Coder winner to MNC Full-Stack Developer</h3><p>Competitive coding talent turned into a full-time engineering role.</p><div class="nm">Cybrom Alumnus</div></div>
+      </article>
+      <article class="story fx">
+        <div class="ph"><span class="pkg">400% ↑</span><img src="images/lms_3.webp" alt=""></div>
+        <div class="body"><h3>From a 2-year gap to 400% salary growth</h3><p>Re-entering the workforce and multiplying earning power four times over.</p><div class="nm">Cybrom Alumna</div></div>
+      </article>
+      <article class="story fx fx-d1">
+        <div class="ph"><span class="pkg">Dream Co.</span><img src="images/lms_4.webp" alt=""></div>
+        <div class="body"><h3>From Tier-2 roots to dream company success</h3><p>Proving that talent and training beat pedigree, every time.</p><div class="nm">Cybrom Alumnus</div></div>
+      </article>
+      <article class="story fx fx-d2">
+        <div class="ph"><span class="pkg">3× MNC</span><img src="images/lms_5.webp" alt=""></div>
+        <div class="body"><h3>From a Tier-3 campus to triple MNC success</h3><p>Multiple offers from leading companies after mentor-led upskilling.</p><div class="nm">Cybrom Alumnus</div></div>
+      </article>
+    </div>
+    <div style="text-align:center;margin-top:44px" class="fx fx-d2">
+      <a class="btn btn-orange" href="#enquire">Start your success story</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="statband">
+  <div class="wrap">
+    <div class="sb fx"><b>10K<span class="u">+</span></b><span>Students trained</span></div>
+    <div class="sb fx fx-d1"><b>17<span class="u"> LPA</span></b><span>Highest package</span></div>
+    <div class="sb fx fx-d2"><b>5<span class="u">-Yr</span></b><span>Placement assistance</span></div>
+    <div class="sb fx fx-d3"><b>100<span class="u">%</span></b><span>Job-oriented training</span></div>
+  </div>
+</section>
+
+<!-- RECOGNIZED BY -->
+<section class="recog" style="padding:clamp(40px,5vw,60px) 0">
+  <div class="wrap">
+    <div class="lbl fx">Recognized By — <b>Trusted by Industry. Validated by Experts.</b></div>
+    <img class="iso fx" src="images/accred_iso.webp" alt="ISO 9001:2015 & ISO 27001:2013 Certified">
+    <img class="fx fx-d1" src="images/accred_startupindia.webp" alt="Startup India recognised">
+    <img class="fx fx-d2" src="images/accred_msme.webp" alt="MSME registered">
+  </div>
+</section>
+
+<!-- CAMPUS LIFE -->
+<section id="campus">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker fx">Campus &amp; culture</p>
+        <h2 class="fx fx-d1">More than a classroom.</h2>
+      </div>
+      <p class="lead fx fx-d2">Hackathons, celebrations, tournaments and a community that grows together — get a glimpse of life at Cybrom.</p>
+    </div>
+    <div class="gallery-grid fx fx-d1">
+      <div class="gcell big"><img src="images/campus_Hackathon.webp" alt="Hackathon"></div>
+      <div class="gcell"><img src="images/campus_Diwali_Celebrations.webp" alt="Diwali celebrations"></div>
+      <div class="gcell"><img src="images/campus_Cricket_tournament.webp" alt="Cricket tournament"></div>
+      <div class="gcell"><img src="images/campus_Holi_Celebration.webp" alt="Holi celebration"></div>
+      <div class="gcell"><img src="images/campus_Certification_distribution.webp" alt="Certification distribution"></div>
+      <div class="gcell tall"><img src="images/campus_Independence_Dayjpg.webp" alt="Independence Day"></div>
+      <div class="gcell"><img src="images/campus_Culture_Day.webp" alt="Culture day"></div>
+      <div class="gcell"><img src="images/campus_picnic.webp" alt="Picnic"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="founder" id="founder">
+  <div class="wrap">
+    <div class="founder-card fx">
+      <div class="founder-badge"><span class="in">PT</span><span>Founder</span></div>
+      <div>
+        <p class="kicker">From the founder</p>
+        <blockquote>"We don't just teach technology — we build careers. Every Cybrom student deserves the skills, mentorship and opportunities to compete with the very best."</blockquote>
+        <div class="who"><b>Mr. Prashant Tiwari</b><span>Founder of Cybrom Technology &amp; Mentor</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENQUIRE / CTA -->
+<section class="enquire" id="enquire">
+  <div class="wrap enq-grid">
+    <div>
+      <p class="kicker light fx">Admissions open</p>
+      <h2 class="fx fx-d1">Your career upgrade<br>starts with one step.</h2>
+      <p class="lead fx fx-d2">Share your details and our counsellors will call you back to help you pick the right program — and explain pay-after-placement.</p>
+      <ul class="enq-list">
+        <li class="fx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Free career counselling — zero obligation</li>
+        <li class="fx fx-d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Guaranteed internship &amp; 5-year placement support</li>
+        <li class="fx fx-d2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Pay a part of your fee only after placement</li>
+      </ul>
+      <p class="enq-call fx fx-d2">Prefer to talk now? Call <a href="tel:9755996968">+91 97559 96968</a></p>
+    </div>
+    <div class="form-card fx fx-d1">
+      <form id="enqForm" novalidate>
+        <h3>Book your free counselling</h3>
+        <p class="sub">We'll call you back within one working day.</p>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" type="text" placeholder="e.g. Rahul Verma" required>
+        </div>
+        <div class="two">
+          <div class="field"><label for="phone">Phone</label><input id="phone" type="tel" placeholder="Your mobile number" required></div>
+          <div class="field"><label for="course">Interested in</label>
+            <select id="course">
+              <option>Full Stack Web</option><option>AI-ML</option><option>Data Science</option>
+              <option>Cyber Security</option><option>DevOps &amp; Cloud</option><option>Digital Marketing</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="email">Email <span style="text-transform:none;letter-spacing:0;font-weight:400">(optional)</span></label><input id="email" type="email" placeholder="you@email.com"></div>
+        <div class="field"><label for="msg">Message <span style="text-transform:none;letter-spacing:0;font-weight:400">(optional)</span></label><textarea id="msg" placeholder="Tell us about your goals…"></textarea></div>
+        <button class="btn btn-orange" type="submit">Request a callback</button>
+        <p class="form-note">Your details are safe with us and never shared.</p>
+      </form>
+      <div class="form-ok" id="formOk">
+        <div class="oi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <h3>Thanks — request received!</h3>
+        <p>A Cybrom counsellor will call you shortly. To talk now, call <a href="tel:9755996968" style="color:var(--orange-dk);font-weight:700">+91 97559 96968</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" aria-label="Cybrom home" style="display:inline-block;margin-bottom:16px"><img class="brand-logo on-dark" src="images/logo_cybrom.png" alt="Cybrom Technology" style="height:38px"></a>
+        <p class="desc">Central India's No.1 job-oriented IT training institute. Hands-on learning in programming, cyber security, data science &amp; AI — built to boost your job prospects.</p>
+        <div class="foot-soc">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l.5-3.5H13V8.2c0-1 .3-1.7 1.8-1.7H17V3.4A26 26 0 0014.5 3C12 3 10.3 4.5 10.3 7.7v2.8H7.5V14h2.8v8z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2 3.77-2C21.4 8.7 22 11 22 14.1V21h-4v-6c0-1.4 0-3.3-2-3.3s-2.3 1.5-2.3 3.2V21h-4z"/></svg></a>
+          <a href="tel:9755996968" aria-label="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 9.5a16 16 0 006 6l1.1-1.1a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Courses</h5>
+        <ul>
+          <li><a href="#courses">Full Stack Web</a></li>
+          <li><a href="#courses">AI-ML &amp; Gen AI</a></li>
+          <li><a href="#courses">Data Science</a></li>
+          <li><a href="#courses">Cyber Security</a></li>
+          <li><a href="#courses">Digital Marketing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Institute</h5>
+        <ul>
+          <li><a href="#why">Why Cybrom</a></li>
+          <li><a href="#stories">Success Stories</a></li>
+          <li><a href="#campus">Campus Life</a></li>
+          <li><a href="#founder">About Us</a></li>
+          <li><a href="#enquire">Enroll Now</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <ul class="foot-contact">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 9.5a16 16 0 006 6l1.1-1.1a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg><a href="tel:9755996968">+91 97559 96968</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg><a href="mailto:Info@cybrom.com">Info@cybrom.com</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>185, Zone-I, Maharana Pratap Nagar, Bhopal, MP</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Cybrom Technology Pvt Ltd. All rights reserved.</span>
+      <span>Job-oriented IT training · Bhopal, India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="lenis.min.js"></script>
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(window.Lenis && !reduce){
+    var lenis=new Lenis({duration:1.1,easing:function(t){return Math.min(1,1.001-Math.pow(2,-10*t));},smoothWheel:true});
+    function raf(t){lenis.raf(t);requestAnimationFrame(raf);} requestAnimationFrame(raf);
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length<2)return;var el=document.querySelector(id);if(!el)return;e.preventDefault();lenis.scrollTo(el,{offset:-70});});
+    });
+  }
+  var fxEls=[].slice.call(document.querySelectorAll('.fx'));
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -7% 0px'});
+    fxEls.forEach(function(el){io.observe(el);});
+  } else { fxEls.forEach(function(el){el.classList.add('in');}); }
+
+  var pEls=[].slice.call(document.querySelectorAll('[data-parallax]'));
+  pEls.forEach(function(img){img.style.willChange='transform';img.style.backfaceVisibility='hidden';});
+  var lastY=-1;
+  function parallax(){
+    var sy=window.scrollY||window.pageYOffset;
+    if(sy!==lastY){lastY=sy;var vh=window.innerHeight;
+      pEls.forEach(function(img){var r=img.getBoundingClientRect();if(r.bottom<-120||r.top>vh+120)return;var prog=(r.top+r.height/2-vh/2)/vh;var y=Math.max(-20,Math.min(20,-prog*26));img.style.transform='scale(1.08) translate3d(0,'+y.toFixed(2)+'px,0)';});}
+    requestAnimationFrame(parallax);
+  }
+  if(!reduce && pEls.length) requestAnimationFrame(parallax);
+
+  var form=document.getElementById('enqForm');
+  if(form){form.addEventListener('submit',function(e){e.preventDefault();var n=document.getElementById('name'),p=document.getElementById('phone');if(!n.value.trim()){n.focus();return;}if(!p.value.trim()){p.focus();return;}form.style.display='none';document.getElementById('formOk').classList.add('show');});}
+})();
+</script>
+</body>
+</html>
